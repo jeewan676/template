@@ -1,72 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness Gym</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym - Get Fit and Stay Healthy</title>
     <link rel="stylesheet" href="style.css">
 </head>
-  <body>
+<body>
     <header>
-      <div class="container">
-        <h1>GAIN YOUR MUSCLE</h1>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#classes">Classes</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+        <div class="container">
+            <h1>GAIN YOUR MUSCLE</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#classes">Classes</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h2>Get Fit and Stay Healthy</h2>
-            <p>Join our gym today and start your fitness journey</p>
-            <button class="btn">Get Started</button>
-          </div>
-          <div class="signup-form">
-            <h3>Sign Up For Free</h3>
-            <form>
-              <input type="text" placeholder="Your Name">
-              <input type="email" placeholder="Your Email">
-              <input type="password" placeholder="Your Password">
-              <button type="submit" class="btn-submit">Join Now</button>
-            </form>
-          </div>
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Get Fit and Stay Healthy</h2>
+                    <p>Join our gym today and start your fitness journey with professional trainers and modern equipment</p>
+                    <button class="btn">Get Started</button>
+                </div>
+                <div class="signup-form">
+                    <h3>Sign Up For Free</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="password" placeholder="Your Password" required>
+                        <button type="submit" class="btn-submit">Join Now</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="features">
-      <div class="container">
-        <h2>welcome to our gym</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <img src="https://www.datocms-assets.com/61076/1707878737-woman-practicing-push-ups-with-trx-straps-in-a-gym-with-trainer.jpg?auto=compress,format&w=2800&fit=max" alt="Personal Training">
-            <h3>Personal Training</h3>
-            <p>Get your body in shape</p>
-          </div>
-          <div class="feature-card">
-            <img src="https://southsidegym.ie/wp-content/uploads/2022/05/Untitled-design-2_11zon-1500x999.jpg" alt="Modern Equipment">
-            <h3>Modern Equipment</h3>
-            <p>Access your pain hidden inside your body</p>
-          </div>
-          <div class="feature-card">
-            <img src="https://hips.hearstapps.com/hmg-prod/images/group-training-in-gym-royalty-free-image-1584375740.jpg" alt="Group Classes">
-            <h3>Group Classes</h3>
-            <p>Join our community classes</p>
-          </div>
+    <section class="features" id="classes">
+        <div class="container">
+            <h2>Welcome To Our Gym</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://www.datocms-assets.com/61076/1707878737-woman-practicing-push-ups-with-trx-straps-in-a-gym-with-trainer.jpg">
+                    <h3>Personal Training</h3>
+                    <p>Get your body in shape with one-on-one training sessions tailored to your goals</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://southsidegym.ie/wp-content/uploads/2022/05/Untitled-design-2_11zon-1500x999.jpg">
+                    <h3>Modern Equipment</h3>
+                    <p>Access state-of-the-art fitness equipment for all your workout needs</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/group-training-in-gym-royalty-free-image-1584375740.jpg" alt="Group Classes">
+                    <h3>Group Classes</h3>
+                    <p>Join our energizing community classes including yoga, spinning, and HIIT</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <footer>
-      <p> 2026 Fitness Gym. All rights reserved.</p>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <h3>Expert Trainers</h3>
+                    <p>Our certified trainers have years of experience helping people achieve their fitness goals</p>
+                </div>
+                <div class="about-item">
+                    <h3>Flexible Hours</h3>
+                    <p>Open 24/7 to fit your busy schedule and lifestyle</p>
+                </div>
+                <div class="about-item">
+                    <h3>Community Support</h3>
+                    <p>Join a motivated community that supports each other's fitness journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Fitness Gym. All rights reserved.</p>
+            <p>Contact us: info@fitnessgym.com | (555) 123-4567</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
 
