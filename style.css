@@ -1,354 +1,338 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0eaea;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-  background-color: #09ffb1;
-  padding: 15px 0;
-  color: rgb(255, 255, 255);
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 24px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
 }
 
 nav a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    opacity: 0.8;
 }
 
 .hero {
-  background-color: #3a7a64;
-  padding: 40px 0;
-  color: white;
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    background-image: url('https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  z-index: 0;
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 250px;
+    flex: 1;
+    min-width: 300px;
+    color: white;
 }
 
 .hero-text h2 {
-  font-size: 32px;
-  margin: 0 0 15px 0;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .hero-text p {
-  font-size: 16px;
-  margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 .btn {
-  background-color: #0fda9d;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 10px 25px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 5px;
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #ee0000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
 }
 
 .signup-form {
-  background-color: rgb(255, 255, 255);
-  padding: 25px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 350px;
-  color: #837979;
-  box-sizing: border-box;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
 }
 
 .signup-form h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #2c5f4f;
-  font-size: 18px;
+    color: #27ae60;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .signup-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 14px;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+    outline: none;
+    border-color: #2ecc71;
 }
 
 .btn-submit {
-  width: 100%;
-  background-color: #4dd4ac;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
+    width: 100%;
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
 .btn-submit:hover {
-  background-color: #ff0800;
+    transform: translateY(-2px);
 }
 
 .features {
-  padding: 60px 0;
-  background-color: white;
+    padding: 5rem 0;
+    background: #f8f9fa;
 }
 
 .features h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #00ffae;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #27ae60;
+    text-transform: uppercase;
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .feature-card {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .feature-card h3 {
-  color: #2c5f4f;
-  font-size: 18px;
-  padding: 15px 20px 0;
-  margin: 0;
+    color: #27ae60;
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem;
 }
 
 .feature-card p {
-  color: #aa2626;
-  font-size: 14px;
-  padding: 10px 20px 20px;
-  margin: 0;
+    color: #666;
+    padding: 0 1.5rem 1.5rem;
+    line-height: 1.6;
+}
+
+.about {
+    padding: 5rem 0;
+    background: white;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #27ae60;
+    text-transform: uppercase;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.about-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+}
+
+.about-item h3 {
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-item p {
+    color: #666;
+    line-height: 1.6;
 }
 
 footer {
-  background-color: #2c5f4f;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-  font-size: 14px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 footer p {
-  margin: 0;
+    margin: 0.5rem 0;
 }
 
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
+    header h1 {
+        font-size: 1.3rem;
+    }
 
-  nav {
-    width: 100%;
-    justify-content: flex-start;
-  }
+    nav {
+        gap: 1rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
 
-  nav a {
-    margin-left: 0;
-    margin-right: 15px;
-    font-size: 13px;
-  }
+    .hero {
+        padding: 3rem 0;
+        min-height: auto;
+    }
 
-  .hero {
-    padding: 30px 0;
-  }
+    .hero-text h2 {
+        font-size: 2rem;
+    }
 
-  .hero-content {
-    flex-direction: column;
-    gap: 20px;
-  }
+    .hero-text p {
+        font-size: 1rem;
+    }
 
-  .hero-text h2 {
-    font-size: 26px;
-  }
+    .hero-content {
+        gap: 2rem;
+    }
 
-  .hero-text p {
-    font-size: 15px;
-  }
+    .features h2,
+    .about h2 {
+        font-size: 2rem;
+    }
 
-  .signup-form {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 13px;
-  }
-
-  .features h2 {
-    font-size: 26px;
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .feature-card img {
-    height: 200px;
-  }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-  header .container {
-    padding: 0 10px;
-  }
+    header h1 {
+        font-size: 1.1rem;
+    }
 
-  header h1 {
-    font-size: 18px;
-  }
+    nav {
+        gap: 0.5rem;
+    }
 
-  nav a {
-    margin-right: 10px;
-    font-size: 12px;
-  }
+    nav a {
+        font-size: 0.9rem;
+    }
 
-  .hero {
-    padding: 20px 0;
-  }
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
 
-  .hero-content {
-    gap: 15px;
-  }
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
 
-  .hero-text h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  .hero-text p {
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  .btn {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
-
-  .signup-form {
-    padding: 15px;
-  }
-
-  .signup-form h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .signup-form input {
-    padding: 8px;
-    margin-bottom: 10px;
-    font-size: 13px;
-  }
-
-  .btn-submit {
-    padding: 10px;
-    font-size: 13px;
-  }
-
-  .features h2 {
-    font-size: 22px;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .feature-card img {
-    height: 180px;
-  }
-
-  .feature-card h3 {
-    font-size: 16px;
-  }
-
-  .feature-card p {
-    font-size: 13px;
-  }
-
-  footer {
-    font-size: 12px;
-    padding: 15px 0;
-  }
+    .signup-form {
+        padding: 1.5rem;
+    }
 }
+
